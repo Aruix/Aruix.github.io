@@ -72,7 +72,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: material
+
+#添加本地搜索
+search:
+  path: search.xml
+  field: post
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
