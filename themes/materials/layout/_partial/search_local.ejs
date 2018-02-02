@@ -1,0 +1,18 @@
+<!-- Local Search-->
+<% if( theme.search.use === 'local' ) { %>
+    <%- partial('_widget/search-local-js') %>
+
+    <script type="text/ls-javascript" id="search-input-script">
+        var inputArea = document.querySelector('#search');
+        var getSearchFile = function() {
+            var path = '<%= config.search.path %>';
+            searchFunc(path, 'search', 'local-search-result');
+        }
+
+        if(inputArea) {
+            inputArea.onfocus = function() {
+                getSearchFile();
+            }
+        }
+    </script>
+<% } %>

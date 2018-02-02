@@ -2201,9 +2201,16 @@ $(document).ready(function() {
     $("#searchLocal").click(function(){
         var width = $("body").width();
         var height = $("#sidebar").height();
+        $(".material-layout").css({
+            "overflow":"hidden"
+        })
         $(".search-local").css({
-            width:width+"px",
-            height:height+"px",
+            "display":"block"
+        })
+    })
+    $("#serachClose").click(function(){
+        $(".search-local").css({
+            "display":"none"
         })
     })
 })

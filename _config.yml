@@ -72,12 +72,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material
+theme: materials
 
 #添加本地搜索
 search:
-  path: search.xml
-  field: post
+  path: /search.xml
+  field: all
+  format: html
+  limit: 10000
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
