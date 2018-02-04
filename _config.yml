@@ -7,7 +7,7 @@ title: Aruix's Blog
 subtitle: 程序设计之道无远弗届，御晨风而返！
 description:
 author: 原来还执着
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -72,11 +72,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: materials
+theme: next
 
 #添加本地搜索
 search:
-  path: /search.xml
+  path: search.xml
   field: all
   format: html
   limit: 10000
