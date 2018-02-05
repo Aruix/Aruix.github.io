@@ -9,10 +9,52 @@
 {% endblock %}
 
 {% block content %}
-  <section id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand index-page">
     {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-      <p>{{post.title}}</p>
+      <article class="post post-type-normal">
+        <div class="post-block">
+          <div class="bg-img" style="background-image:url({{ post.thumbnail }})">
+            <a href="{{ url_for(post.path) }}">{{post.title}}</a>
+          </div>
+          <p class="content">
+            {{ strip_html(post.content).substring(0,theme.title_length) }}...
+            &nbsp;&nbsp;&nbsp;
+            <span>
+              <a href="{{ post.path }}" target="_self">{{ __('post.read_more') }}</a>
+            </span>
+          </p>
+          <div class="bot">
+            <div class="bot-left">
+              <div class="author-avatar" style="background-image:url({{ theme.avatar }})">
+              </div>
+              <div>
+                <strong>{{ config.author }}</strong> 
+                <span>{{ time(post.date, 'YYYY-MM-DD') }}</span>
+              </div>
+            </div>
+            <div class="bot-right">
+              <span class="post_entry-tags">
+                {% for tag in post.tags %}
+                  -
+                  <a class="post_category-link" href="{{ tag.path }}">
+                  {{ tag.name }}
+                  </a>
+                {% endfor %}
+                <i class="menu-item-icon fa fa-fw fa-tags"></i>
+              </span>
+              <span class="post_entry-category">
+                {% for cate in post.categories %}
+                -
+                  <a class="post_category-link" href="{{ cate.path }}">
+                  {{ cate.name }}
+                  </a>
+                {% endfor %}
+                <i class="menu-item-icon fa fa-fw fa-th"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </article>
     {% endfor %}
   </section>
 

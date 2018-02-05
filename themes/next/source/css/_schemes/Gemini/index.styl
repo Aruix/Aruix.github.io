@@ -33,6 +33,81 @@ use_seo = hexo-config('seo');
   border-radius: initial;
 }
 
+//自己加的
+.index-page .post-block{
+  padding:0;
+}
+.index-page .bg-img{
+  height:247px;
+  background-size:cover;
+  padding: 20px;
+  position:relative;
+}
+.bg-img a{
+  position:absolute;
+  bottom:20px;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 1px 1px 8px #444;
+  color:white;
+  border:none;
+}
+.index-page .content{
+  padding: 1pc;
+  margin-bottom:0;
+}
+.index-page .content a{
+  color:$black-deep
+}
+.index-page .bot{
+  border-top:1px solid rgba(0,0,0,.1);
+  overflow:hidden;
+}
+.bot .bot-left{
+  float:left;
+  width:50%;
+  padding:1pc;
+}
+.bot-left .author-avatar{
+  float:left;
+  width:44px;
+  height:44px;
+  background-size:100%;
+  border-radius:100%;
+  margin-right:1pc;
+}
+.bot-left strong{
+  display:block;
+  line-height:20px;
+}
+.bot .bot-right{
+  float:right;
+  position:relative;
+  height:47px;
+  width:30%;
+  padding:1pc;
+  font-size:12px;
+}
+.bot-right .post_entry-category{
+  position:absolute;
+  right:1pc;
+  bottom:1pc;
+}
+.bot-right .post_entry-tags{
+  position:absolute;
+  right:1pc;
+  top:1pc;
+}
+.post_entry-category a,.post_entry-tags a{
+  border-bottom:none;
+  color:$black-deep;
+}
+.post_entry-category i,.post_entry-tags i{
+  color:$black-deep;
+  font-size:14px;
+}
 // Post & Comments blocks.
 .post-block {
   padding: $content-desktop-padding;
