@@ -51,7 +51,7 @@ console.log(reg.test(str)); //true
 
 #### 3.1.2.exec()
 
-exec()方法在字符串中查找指定的正则表达式，若成功则返回包含要查找的字符串的相关信息数组，若没有成功则返回null。
+exec()方法在字符串中查找指定的正则表达式，若成功则返回 包含要查找的字符串的相关信息数组，若没有成功则返回null。
 ``` bash
 var reg = /box/ig;
 var str = "this is box,is you box";
