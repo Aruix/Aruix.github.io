@@ -1,40 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F01%2F31%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[javascript中的正则表达式]]></title>
-    <url>%2F2017%2F06%2F06%2Fjs-zhengze-1%2F</url>
-    <content type="text"><![CDATA[正则表达式是一个强大的文本处理工具，可以进行强大的模式匹配和文本的检索与替换。 一、什么是正则表达式二、如何构建一个正则表达式在javascript中有两种方法构建正则表达式，分别是通过RegExp对象构建和采用字面量的方式构建 2.1.通过javascript提供的RegExp()对象构造例如：1var number = new RegExp("box","ig"); 第一个参数是需要匹配的字符串(必填)，第二个参数是可选模式修饰符(选填)其中第二个参数的可选值如下：i 忽略大小写g 全局匹配 一般情况匹配到一个节点就停止匹配，改参数是匹配到文本结束m 多行匹配 如果没有加m只匹配第一行 2.2.直接构造的方式例如：1var number = /123/ 三、正则表达式方法正则表达式是方法有两大类，一是正则对象的正则表达式方法，另外一种是字符串对象的正则表达式方法。 3.1.正则对象的正则表达式方法RegExp有两个方法用来测试正则表达式：test()和exec() 3.1.1.test()方法test()方法在字符串中查找是否存在指定的正则表达式，若存在则返回true，不存在就返回false。123var reg = /box/ig;var str = "this is box,is you box";console.log(reg.test(str)); //true 3.1.2.exec()exec()方法在字符串中查找指定的正则表达式，若成功则返回 包含要查找的字符串的相关信息数组，若没有成功则返回null。123var reg = /box/ig;var str = "this is box,is you box";console.log(reg.exec(str)); 返回的数组如下：[“box”,index:8,input:”this is box,is you box”]其中第1个是正则中的字符串，index是第一次匹配的位置，input是匹配的字符串 3.2.字符串对象的正则表达式方法字符串的正则表达式的方法，主要有match(),replace(),search()和split() 3.2.1.使用match()方法获取匹配数组match()方法，检索字符串中指定的值，返回一个结果数组。例如：123var str = "1 是 1 ，二是二 ， 3是3";console.log(str.match(/\d+/g)) // [1,1,3,3]console.log(str.match(/\d+/)) // ["1",index:0,input:"1 是 1 ，二是二 ， 3是3"] 其中 /\d+/g 是全局检索所有的数字，上面的代码把字符串中的数字检索出来，并以数组的形式返回。而 /\d+/ 是非全局检索，最后所得的结果与 exec() 方法类似。数组中第1个是正则中的字符串，index是第一次匹配的位置，input是匹配的字符串。]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>正则表达式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[setTimeout]]></title>
-    <url>%2F2017%2F06%2F06%2Fsetouttime%2F</url>
-    <content type="text"><![CDATA[参考链接！setTimeout的第三个参数]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>日常记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[标签集]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2018/01/31/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[javascript中的正则表达式]]></title>
+      <url>/2017/06/06/js-zhengze-1/</url>
+      <content type="html"><![CDATA[<p>正则表达式是一个强大的文本处理工具，可以进行强大的模式匹配和文本的检索与替换。</p>
+<h2 id="一、什么是正则表达式"><a href="#一、什么是正则表达式" class="headerlink" title="一、什么是正则表达式"></a>一、什么是正则表达式</h2><h2 id="二、如何构建一个正则表达式"><a href="#二、如何构建一个正则表达式" class="headerlink" title="二、如何构建一个正则表达式"></a>二、如何构建一个正则表达式</h2><p>在javascript中有两种方法构建正则表达式，分别是通过RegExp对象构建和采用字面量的方式构建</p>
+<h3 id="2-1-通过javascript提供的RegExp-对象构造"><a href="#2-1-通过javascript提供的RegExp-对象构造" class="headerlink" title="2.1.通过javascript提供的RegExp()对象构造"></a>2.1.通过javascript提供的RegExp()对象构造</h3><p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var number = new RegExp(<span class="string">"box"</span>,<span class="string">"ig"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>第一个参数是需要匹配的字符串(必填)，第二个参数是可选模式修饰符(选填)<br>其中第二个参数的可选值如下：<br>i 忽略大小写<br>g 全局匹配 一般情况匹配到一个节点就停止匹配，改参数是匹配到文本结束<br>m 多行匹配 如果没有加m只匹配第一行</p>
+<h3 id="2-2-直接构造的方式"><a href="#2-2-直接构造的方式" class="headerlink" title="2.2.直接构造的方式"></a>2.2.直接构造的方式</h3><p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var number = /123/</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、正则表达式方法"><a href="#三、正则表达式方法" class="headerlink" title="三、正则表达式方法"></a>三、正则表达式方法</h2><p>正则表达式是方法有两大类，一是正则对象的正则表达式方法，另外一种是字符串对象的正则表达式方法。</p>
+<h3 id="3-1-正则对象的正则表达式方法"><a href="#3-1-正则对象的正则表达式方法" class="headerlink" title="3.1.正则对象的正则表达式方法"></a>3.1.正则对象的正则表达式方法</h3><p>RegExp有两个方法用来测试正则表达式：test()和exec()</p>
+<h4 id="3-1-1-test-方法"><a href="#3-1-1-test-方法" class="headerlink" title="3.1.1.test()方法"></a>3.1.1.test()方法</h4><p>test()方法在字符串中查找是否存在指定的正则表达式，若存在则返回true，不存在就返回false。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var reg = /box/ig;</span><br><span class="line">var str = <span class="string">"this is box,is you box"</span>;</span><br><span class="line">console.log(reg.test(str)); //<span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="3-1-2-exec"><a href="#3-1-2-exec" class="headerlink" title="3.1.2.exec()"></a>3.1.2.exec()</h4><p>exec()方法在字符串中查找指定的正则表达式，若成功则返回 包含要查找的字符串的相关信息数组，若没有成功则返回null。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var reg = /box/ig;</span><br><span class="line">var str = <span class="string">"this is box,is you box"</span>;</span><br><span class="line">console.log(reg.exec(str));</span><br></pre></td></tr></table></figure></p>
+<p>返回的数组如下：<br>[“box”,index:8,input:”this is box,is you box”]<br>其中第1个是正则中的字符串，index是第一次匹配的位置，input是匹配的字符串</p>
+<h3 id="3-2-字符串对象的正则表达式方法"><a href="#3-2-字符串对象的正则表达式方法" class="headerlink" title="3.2.字符串对象的正则表达式方法"></a>3.2.字符串对象的正则表达式方法</h3><p>字符串的正则表达式的方法，主要有match(),replace(),search()和split()</p>
+<h4 id="3-2-1-使用match-方法获取匹配数组"><a href="#3-2-1-使用match-方法获取匹配数组" class="headerlink" title="3.2.1.使用match()方法获取匹配数组"></a>3.2.1.使用match()方法获取匹配数组</h4><p>match()方法，检索字符串中指定的值，返回一个结果数组。<br>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">"1 是 1 ，二是二 ， 3是3"</span>;</span><br><span class="line">console.log(str.match(/\d+/g)) // [1,1,3,3]</span><br><span class="line">console.log(str.match(/\d+/)) // [<span class="string">"1"</span>,index:0,input:<span class="string">"1 是 1 ，二是二 ， 3是3"</span>]</span><br></pre></td></tr></table></figure></p>
+<p>其中 /\d+/g 是全局检索所有的数字，上面的代码把字符串中的数字检索出来，并以数组的形式返回。<br>而 /\d+/ 是非全局检索，最后所得的结果与 exec() 方法类似。数组中第1个是正则中的字符串，index是第一次匹配的位置，input是匹配的字符串。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 正则表达式 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[setTimeout]]></title>
+      <url>/2017/06/06/setouttime/</url>
+      <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/25855075" target="_blank" rel="noopener">参考链接！</a><br>setTimeout的第三个参数</p>
+]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 日常记录 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[分类]]></title>
+      <url>/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签集]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
 </search>
