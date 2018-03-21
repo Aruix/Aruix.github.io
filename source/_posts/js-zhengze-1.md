@@ -1,7 +1,7 @@
 ---
 title: javascript中的正则表达式
 date: 2017/06/06
-thumbnail: https://cdn.viosey.com/img/blog/landscape-hot-air-balloons-mist.jpg
+thumbnail: images/material-3.png
 tags:
   - 正则表达式
 categories:
