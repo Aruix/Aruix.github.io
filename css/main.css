@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dbff37;
+  background: #9e8cff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2748,7 +2748,7 @@ pre .javascript .function {
   color: #fff;
 /*background: $black-deep;*/
   background: url("../images/sidebar_header.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
