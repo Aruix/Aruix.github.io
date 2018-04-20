@@ -17,7 +17,8 @@
             <a href="{{ url_for(post.path) }}">{{post.title}}</a>
           </div>
           <p class="content">
-            {{ strip_html(post.content).substring(0,theme.title_length) }}...
+            <!--{{ strip_html(post.content).substring(0,theme.title_length) }}...-->
+            {{ truncate(strip_html(post.content),{length: theme.title_length }) }}
             &nbsp;&nbsp;&nbsp;
             <span>
               <a href="{{ post.path }}" target="_self">{{ __('post.read_more') }}</a>
