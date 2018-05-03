@@ -13,6 +13,7 @@ categories:
 ## 二、如何构建一个正则表达式
 
 在javascript中有两种方法构建正则表达式，分别是通过RegExp对象构建和采用字面量的方式构建
+<!-- more -->
 
 ### 2.1.通过javascript提供的RegExp()对象构造
 
